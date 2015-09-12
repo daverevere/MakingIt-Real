@@ -25,7 +25,7 @@ background-color: #7f8c8d;
   position: relative;
   
 }
-
+/*Why won't these header styles work in a class?*/
 header {
 width: 100%;
 height: 250px;
@@ -35,12 +35,12 @@ position: relative;
 }
 
 .title {
-padding-left: 10px;
+padding-left: 2%;
 bottom: 30px;
 color:white;
 position:absolute;
 font: bold 1.5em arial;
-margin-bottom: 10px;
+margin-bottom: 2%;
 /*position: absolute;*/
 /*margin-top: 30%;*/
 /*line-height: 350px;*/
@@ -48,8 +48,8 @@ margin-bottom: 10px;
 }
 
 
-nav {
-display: inline-block;
+.nav-class {
+/*display: inline-block;*/
 width: 100%;
 height: 40px;
 background-color: #34495e;
@@ -59,34 +59,42 @@ position: absolute;
 bottom: 0px;
 }
 
-nav a {
-padding-left: 25px;
+.nav-class a {
+padding: 2% 2% 2% 5%;
 /*text-align: right;*/
 font-size: 0.8em;
 text-transform: uppercase;
 color: #fff;
 text-decoration: none;
 float: right;
-padding-right: 10px;
-padding-top: 10px;
 /*position:absolute;*/
 }
 
 h2{
-font: bold 20px;
+font: bold 1em;
 }
 
-article {
+h3 {
+border-bottom: 1px solid grey;	
+}
+
+p {
+padding: 0 4%;
+}
+
+.article-section-class {
 margin: 0 auto;
 width: 100%;
-padding: 30px;
-font: 0.8em arial;
-
+padding: 0 6%;
+font: 0.8em arial;	
 }
 
-article p {
+/*article {
+margin: 0 auto;
+width: 100%;
+padding: 6%;
+font: 0.8em arial;
 
-padding: 0 20px;	
 }
 
 
@@ -94,22 +102,14 @@ section {
 
 margin: 0 auto;
 width: 100%;
-padding: 0px 30px;	
+padding: 0 6%;	
 font: 0.8em arial;
-}
+}*/
 
-
-section p {
-padding: 0 20px;
-}
-
-
-h3 {
-border-bottom: 1px solid grey;	
-}
 
 
 table {
+width: 100%;
 border-collapse: collapse;
 
 }
@@ -141,7 +141,7 @@ padding: 5px 13px 5px 13px;
 
 aside {
 background: lightgrey;
-padding-left: 20px;
+padding-left: 4%;
 
 }
 
@@ -149,7 +149,7 @@ padding-left: 20px;
 footer{
 
 font-size: 0.3em;
-padding: 0px 30px;
+padding: 0 6%;
 color: grey;
 }
 
@@ -171,12 +171,23 @@ border-bottom: none;
 
 }
 
+.big-image {
+
+width: 100%;
+
+}
+
+.input-class {
+float: right;
+width: 100%;
+
+}
 
 textarea {
 
 width: 100%;
 height: 150px;
-padding: 0px;
+padding: 0;
 margin: none;
 
 }
@@ -191,52 +202,130 @@ color: white;
 font: bold;
 }
 
+.user {
+
+	margin-left: 10%;
+/*	margin-bottom: none;*/
+	/*border-left: 1px solid lightgrey;*/
+	padding-left: 2%;
+	/*padding-bottom: none;*/
+	/*margin-top: none;*/
+	/*border-spacing:none;
+	border-collapse: collapse;*/
+}
 
 .user img {
 	float: left;
-	padding-right: 10px;
+	padding-right: 2%;
 
 }
-
-
-/*.user */.username {
-	font-weight: bold;
-	font-size:15px;
-}
-
-
-/*.user */.userdate {
-
-font-style: italic;	
-color: grey;
-}
-
-
-.userresponse {
-
-	margin-left: 50px;
-	margin-bottom: none;
-	border-left: 1px solid lightgrey;
-	padding-left: 10px;
-	padding-bottom: none;
-	margin-top: none;
-	border-spacing:none;
-	border-collapse: collapse;
-}
-
 
 .user p {
 
 padding-left: 0;
 }
 
+.user-reply {
 
-.sidebar {
+	margin-left: 0;
+	/*margin-bottom: none;*/
+	/*border-left: 1px solid lightgrey;*/
+	padding-left: 2%;
+	/*padding-bottom: none;*/
+	/*margin-top: none;*/
+	/*border-spacing:none;*/
+	/*border-collapse: collapse;*/
 
 
 }
 
-@media screen and (max-width: 420px){
+.user-reply img {
+	float: left;
+	padding-right: 2%;
+	
+}
+
+.user-reply p {
+
+padding-left: 0;
+
+}
+
+
+.username {
+	font-weight: bold;
+	font-size:1.25em;
+}
+
+
+.userdate {
+
+font-style: italic;	
+color: grey;
+}
+
+
+
+.comments-border {
+border-left: 1px solid lightgrey;	
+margin-left: 100px;
+
+}
+
+.sidebar {
+background: #ecf0f1;
+border-bottom: 3px solid black;
+text-align: left;
+padding: 7px 0;
+width: 30%;
+position: relative;
+left: 104%; 
+bottom: 2755px;
+font-size: .9em;
+
+/*This is 104% left from what?*/
+
+}
+
+.sidebar ul {
+list-style-type: none;
+font-weight: bold;
+padding-left: 15%;
+}
+
+
+
+.sidebar a {
+font-size: 0.8em;
+text-decoration: none;
+color: grey;
+
+}
+
+@media screen and (max-width: 857px){
+.sidebar {
+	position: absolute;
+	left: 65%;
+	bottom: 2800px;
+}
+
+}
+
+@media screen and (max-width: 480px){
+
+.container {
+  margin: 0 auto;
+/*  padding-left: 30px;
+  padding-right: 30px;*/
+  width: 100%;
+  font-family: arial;
+  background: #ecf0f1;
+  position: relative;
+}
+.sidebar {
+	position:relative;
+	float:right;
+ }
 
 
 }
